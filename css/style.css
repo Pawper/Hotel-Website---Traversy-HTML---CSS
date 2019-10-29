@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+abbr, address {
+  text-decoration: none;
+  font-style: normal;
+}
+
 h1, h2, h3 {
   padding-bottom: 20px;
 }
@@ -241,11 +246,42 @@ p {
   margin-bottom: 5px;
 }
 
+#contact-form abbr[title="required"] {
+  color: red;
+}
+
 #contact-form input,
 #contact-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px #ddd solid;
+}
+
+#contact-form legend {
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+
+#contact-form fieldset {
+  border: 1px #ddd solid;
+}
+
+#contact-form fieldset ul {
+  list-style: none;
+  display: flex;
+} 
+
+#contact-form fieldset ul li {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+#contact-form label[for^="title"],
+#contact-form input[type="radio"],
+#contact-form input#otherTitle {
+  width: auto;
+  margin: 0 0 13px 10px;
 }
 
 #contact-form textarea {
@@ -256,6 +292,16 @@ p {
 #contact-form textarea:focus {
   outline: none;
   border-color: #f7c08a;
+}
+
+/* Contact info */
+
+#contact-info a {
+  color: #fff;
+}
+
+#contact-info a:hover {
+  color: #f7c08a;
 }
 
 /* Footer */
